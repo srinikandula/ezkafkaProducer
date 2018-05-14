@@ -34,8 +34,8 @@ KafkaService.prototype.sendRecord = function (positions, callback) {
             console.error("producer: error writing to kafka "+ JSON.stringify(err));
             callback(err);
         } else {
-           // console.log('producer: done');
-            callback(data);
+           console.log('producer: done');
+           callback(data);
         }
     });
 };
