@@ -4,7 +4,7 @@ function getUserHome() {
     return process.env[(process.platform === 'win32') ? 'USERPROFILE' : 'HOME'];
 }
 
-var localConfigPath = getUserHome() + '/easygaadi-kafka-config.json';
+var localConfigPath = getUserHome() + '/easygaadi-kafka-producer-config.json';
 var projectConfigPath = __dirname + '/config.json';
 
 if(process.env.NODE_ENV === "test") {
